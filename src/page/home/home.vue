@@ -18,7 +18,7 @@
     name: 'home',
     data () {
       return {
-        msg: '第一个页面',
+        msg: 'rem单位演示',
         msg1:'第二个页面'
       }
     },
@@ -58,6 +58,5 @@
     background: aqua;
     text-decoration: underline;
   }
-
 
 </style>
