@@ -1,7 +1,7 @@
 <template>
   <div class="rrbottom-box">
-    <span class="rrheader-box-spen">{{msg}}</span>
-    <span class="rrheader-box-spen">{{msg1}}</span>
+    <a><router-link to="/">{{msg}}</router-link></a>
+    <a><router-link to="/my">{{msg1}}</router-link></a>
   </div>
 </template>
 
@@ -25,9 +25,10 @@
     background: bisque;
     display: flex;
   }
-  .rrbottom-box>span{
+  .rrbottom-box>a{
     color: black;
     flex: 1;
     text-align: center;
+    text-decoration: underline;
   }
 </style>

@@ -2,9 +2,7 @@
   <div>
     <rrheader class="rrheader"></rrheader>
     <div class="body-box">
-      <h1>首頁</h1>
-      <a><router-link to="/pageOne">{{msg}}</router-link></a>
-      <a><router-link to="/pageTwo">{{msg1}}</router-link></a>
+      <h1>第四个页面</h1>
     </div>
     <rrbottom class="rrbottom"></rrbottom>
   </div>
@@ -18,8 +16,6 @@
     name: 'home',
     data () {
       return {
-        msg: '第一个页面',
-        msg1:'第二个页面'
       }
     },
     components: {
@@ -48,15 +44,7 @@
   h1{
     text-align: center;
     font-size: 30px;
-  }
-  .body-box>a{
-    margin-top: 30px;
-    width: 100px;
-    line-height: 30px;
-    text-align: center;
-    display: inline-block;
-    background: aqua;
-    text-decoration: underline;
+    color: purple;
   }
 
 
