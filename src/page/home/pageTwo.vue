@@ -2,7 +2,12 @@
   <div>
     <rrheader class="rrheader"></rrheader>
     <div class="body-box">
-      <h1>第二个页面</h1>
+      <h1>使用less</h1>
+      <div class="less-box">
+        <div class="less-1">
+          <div class="less-2"></div>
+        </div>
+      </div>
     </div>
     <rrbottom class="rrbottom"></rrbottom>
   </div>
@@ -26,7 +31,8 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
+
   .rrheader{
     position: fixed;
     top: 0;
@@ -38,7 +44,7 @@
     left: 0;
   }
   .body-box{
-    margin-top: 60px;
+    margin-top: 2rem;
     width: 100%;
   }
   h1{
@@ -47,5 +53,23 @@
     color: aquamarine;
   }
 
+  .less-box{
+    margin: 2rem 0;
+    width: 100%;
+    height: 6rem;
+    background: #FF0000;
+    .less-1{
+      width: 80%;
+      height: 4rem;
+      background: yellow;
+      margin: 0 auto;
+      .less-2{
+        width: 60%;
+        height: 2rem;
+        background: darkslategray;
+        margin: 0 auto;
+      }
+    }
+  }
 
 </style>

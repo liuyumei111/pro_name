@@ -19,7 +19,7 @@
     data () {
       return {
         msg: 'rem单位演示',
-        msg1:'第二个页面'
+        msg1:'使用less'
       }
     },
     components: {
