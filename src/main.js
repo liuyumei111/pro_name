@@ -3,11 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//http请求
+import  VueResource  from 'vue-resource'
+
 
 import "@/css/index.css"
 import './config/rem'
 
 Vue.config.productionTip = false
+
+Vue.use(VueResource);
 
 /* eslint-disable no-new */
 new Vue({

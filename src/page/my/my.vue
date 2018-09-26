@@ -4,7 +4,7 @@
     <div class="body-box">
       <h1>我的</h1>
       <a><router-link to="/pageThree">{{msg}}</router-link></a>
-      <a><router-link to="/pageFour">{{msg}}</router-link></a>
+      <a><router-link to="/pageFour">{{msg1}}</router-link></a>
     </div>
     <rrbottom class="rrbottom"></rrbottom>
   </div>
@@ -18,7 +18,7 @@
     name: 'home',
     data () {
       return {
-        msg: '第三个页面',
+        msg: 'vue-resource（http请求）插件使用',
         msg1:'第四个页面'
       }
     },
