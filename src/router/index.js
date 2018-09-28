@@ -9,6 +9,8 @@ import pageTwo from '@/page/home/pageTwo'
 import my from '@/page/my/my'
 import pageThree from '@/page/my/pageThree'
 import pageFour from '@/page/my/pageFour'
+import pageFive from '@/page/my/pageFive'
+import pageSix from '@/page/my/pageSix'
 
 
 Vue.use(Router);
@@ -36,14 +38,23 @@ export default new Router({
       component: pageTwo
     },
     {
+      path: '/pageThree',
+      name: 'pageThree',
+      component: pageThree
+    },{
       path: '/pageFour',
       name: 'pageFour',
       component: pageFour
     },
     {
-      path: '/pageThree',
-      name: 'pageThree',
-      component: pageThree
+      path: '/pageFive/:name/:token',
+      name: 'pageFive',
+      component: pageFive
+    },
+    {
+      path: '/pageSix/:name/:token',
+      name: 'pageSix',
+      component: pageSix
     }
   ]
 })

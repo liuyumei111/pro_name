@@ -2,9 +2,12 @@
   <div>
     <rrheader class="rrheader"></rrheader>
     <div class="body-box">
-      <h1>我的</h1>
-      <a><router-link to="/pageThree">{{msg}}</router-link></a>
-      <a><router-link to="/pageFour">{{msg1}}</router-link></a>
+      <h1>第六个页面</h1>
+      <div>
+        <h2 style="color: #FF0000">参数</h2>
+        <p>name:{{name}}</p>
+        <p>token:{{token}}</p>
+      </div>
     </div>
     <rrbottom class="rrbottom"></rrbottom>
   </div>
@@ -18,9 +21,13 @@
     name: 'home',
     data () {
       return {
-        msg: 'vue-resource（http请求）插件使用',
-        msg1:'url传参'
+        name:'',
+        token:""
       }
+    },
+    created(){
+     this.name= this.$route.params.name;
+     this.token= this.$route.params.token;
     },
     components: {
       rrheader,
@@ -48,15 +55,7 @@
   h1{
     text-align: center;
     font-size: 30px;
-  }
-  .body-box>a{
-    margin-top: 30px;
-    width: 100px;
-    line-height: 30px;
-    text-align: center;
-    display: inline-block;
-    background: aquamarine;
-    text-decoration: underline;
+    color: purple;
   }
 
 
